@@ -22,16 +22,31 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 	  margin: 18px 0;
 	}*/
 
+	body{
+
+		background-color: #e4e4e4;
+	}
+
+	#wrapper{
+
+		width: 800px;
+		height: 1500px;
+		margin: auto;
+	}
+
 	</style>
 </head>
 <body>
-<div id="wrapper">
-	
-	<nav class="navbar navbar-default navbar-fixed-top">
+
+<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			
 		</div>
-	</nav>
+</nav>
+
+<div id="wrapper">
+	
+	
 
 
 	<div id="main" class="container-fluid">
