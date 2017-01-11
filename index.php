@@ -74,11 +74,46 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 	.section{
 		margin-left: auto;
 		margin-right: auto;
+
 	}
 
 	h3 {
 
 		text-align: center;
+	}
+
+	h3 span {
+
+		background-color: rgba(248,248,248,0.7);
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 10px;
+	}
+
+	h4{
+
+		color: #f8f8f8;
+		display: inline-block;
+		text-align: justify;
+	}
+
+	
+	#pic_frame {
+
+		border-radius: 50%;
+		border: 10px solid;
+		border-color: #f8f8f8;
+	}
+
+	.separator{
+		border-radius: 50%;
+		background: #f8f8f8;
+		
+		width:5px;
+		height:5px;
+		margin-bottom: 4px;
+		display: inline-block;
+
 	}
 
 	</style>
@@ -89,7 +124,7 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 			<div id="nav-center" class="container-fluid">
 				
 				<div class="navbar-header">
-					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/manayaad_logo.png" alt="Man-A-Yaad logo"></a>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/manayaad_logo.PNG" alt="Man-A-Yaad logo"></a>
 				</div>
 				
 				
@@ -108,21 +143,91 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 <div id="wrapper">
 	
 	<div id="main" class="container-fluid">
-		<div id="profile" class="row">
+		<div class="row">
 			<div class="col-md-12 section">
-				<h3><span><em>ABOUT ME</em></span></h3>
+				<h3><span>ABOUT ME</span></h3>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img id="pic_frame" class="img-responsive" src="img/prof_pic.jpg" alt="joshua's profile pic">
+			</div>
+			<div  class="col-md-8">
+				<h4>IT Professional</h4>
+				<div class="separator"></div>
+				<h4>ICT4D Enthusiast</h4>
+				<div class="separator"></div>
+				<h4>Aspiring Web Developer</h4>
+				<hr>
+				<h4>Technical architect and consultant with proven expertise in IT service design and project management. Digital marketer with experience in WordPress administration, SEO and content publishing. Entrepreneur with interests in healthcare informatics and innovation.</h4>				
+			</div>			
 		</div>
 		<hr>
 		<div id="portfolio" class="row">
 			<div class="col-md-12 section">
-				<h3><span><em>PORTFOLIO</em></span></h3>
+				<h3><span>PORTFOLIO</span></h3>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive" src="img/FYST-capture.png" alt="Fix Your Sleep Today blog">
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-responsive" src="img/AMA-capture.png" alt="A Man Aflame blog">
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-responsive" src="img/natkleit-capture.png" alt="A Tribute to Nathaniel Kleitman website">
+			</div>
+			
 		</div>
 		<hr>
 		<div id="contact" class="row">
 			<div class="col-md-12 section">
-				<h3><span><em>CONTACT</em></span></h3>
+				<h3><span>CONTACT</span></h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+
+			<div class="col-md-8">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-md-3" for="name">Name</label>
+						<div class="col-md-5">
+							<input class="form-control" type="text" placeholder="">
+						</div>
+						
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3" for="email">Email</label>
+						<div class="col-md-5">
+							<input class="form-control" type="email" placeholder="">
+						</div>
+						
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3" for="website">Website</label>
+						<div class="col-md-5">
+							<input class="form-control" type="text" placeholder="">
+						</div>
+						
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3" for="message">Message</label>
+						<div class="col-md-5">
+							<input class="form-control" type="textarea" placeholder="Leave some feedback!">
+						</div>
+						
+					</div>
+				</form>	
 			</div>
 		</div>
 	</div>
