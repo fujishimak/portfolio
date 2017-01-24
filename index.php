@@ -129,11 +129,15 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 		color: #f8f8f8;
 	}
 
-	h4{
+	h4, h5{
 
 		color: #f8f8f8;
 		display: inline-block;
 		text-align: justify;
+	}
+
+	.made-with{
+		color: #242424;
 	}
 
 	
@@ -193,8 +197,10 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 
 	#copyright{
 		background-color: #242424;
-		height: 20px;
+		height: 30px;
 		margin: 0px;
+		padding-bottom: 0px;
+		text-align: center;
 	}
 
 	</style>
@@ -219,7 +225,7 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 	</nav>
 
 
-<div id="wrapper">
+<div id="wrapper" class="container-fluid">
 	
 	<div id="main" class="container-fluid">
 		<div class="row">
@@ -335,22 +341,28 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 </div>
 
 <footer class="footer">
-	<div id="footer-container" class="container">
+	<div id="footer-container" class="container-fluid">
 		<div class="row">
 			<div class="col-md-6 pull-left">
-				
+				<div>
+					<h4 class="made-with">Made with <span><i class="fa fa-heart"></i></span>, <span><i class="fa fa-headphones"></i></span> and plenty of <span><i class="fa fa-github"></i></span></h4>
+				</div>
 			</div>
 
 			<div class="col-md-6 pull-right">
-				
+				<div>
+					<h4 class="made-with">Special shoutouts to <a href="https://twitter.com/freeCodeCamp">@freeCodeCamp</a>, <a href="https://twitter.com/PalettonCom">@PalettonCom</a> and <a href="https://twitter.com/fontawesome">@fontawesome</a>!</h4>
+				</div>
 			</div>
 		</div>
 		
 	</div>
 
-	<div id="copyright" class="row">
-		<div class="col-md-12">
-			<h3>Man A Yaad Inc. All Rights Reserved</h3>
+	<div>
+		<div id="copyright" class="row">
+			<div class="col-md-12">
+				<h5><span>&copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> Man A Yaad Inc. All Rights Reserved</span></h5>
+			</div>
 		</div>
 	</div>
 
