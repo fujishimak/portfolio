@@ -11,6 +11,8 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<style type="text/css">
 		
 	/*
@@ -28,6 +30,33 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 	  margin: 18px 0;
 	}*/
 
+	/*Reused from Ibrahim Jabbari's work here: https://codepen.io/ibrahimjabbari/pen/ozinB*/
+
+	hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*display: block;*/
+	}
+
+	ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+	}
+
+	ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+	}
+
+	.social-network a:hover{
+		color: #f8f8f8;
+	}
+
 	body{
 
 		background-color: #e4e4e4;
@@ -37,10 +66,11 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 		position: relative;
 		top: 50px;
 		width: 800px;
-		height: 1500px;
+		/*height: 1000px;*/
 		margin: auto;
 		background-color: #242424;
-		padding-top: 15;
+		padding-top: 15px;
+		padding-bottom: 60px;
 	}
 
 	
@@ -90,6 +120,15 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 		border-radius: 10px;
 	}
 
+	#port_span {
+
+		background-color: rgba(36,36,36,0.7);
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 10px;
+		color: #f8f8f8;
+	}
+
 	h4{
 
 		color: #f8f8f8;
@@ -105,6 +144,24 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 		border-color: #f8f8f8;
 	}
 
+	#portfolio, #panel{
+
+		background: #f8f8f8;	
+	}
+
+	.standoff {
+
+		padding-bottom: 40px;
+	}
+
+	.sample{
+		/*border-radius: 10px;*/
+		border: 10px solid;
+		border-color: #242424;
+		/*border-style: solid;*/
+	}
+
+
 	.separator{
 		border-radius: 50%;
 		background: #f8f8f8;
@@ -114,6 +171,30 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 		margin-bottom: 4px;
 		display: inline-block;
 
+	}
+
+	.control-label{
+		color: #f8f8f8;
+	}
+
+	.footer{
+		background-color: #f8f8f8;
+		position: absolute;
+		/*bottom: 0;*/
+		width: 100%;
+		/* Set the fixed height of the footer here */
+		height: 80px;
+	}
+
+	#footer-container{
+		width: 800px;
+		margin: auto;
+	}
+
+	#copyright{
+		background-color: #242424;
+		height: 20px;
+		margin: 0px;
 	}
 
 	</style>
@@ -134,8 +215,6 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 					<li><a href="#">Contact</a></li>
 				</ul>
 				
-				
-				
 			</div>
 	</nav>
 
@@ -149,7 +228,7 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row standoff">
 			<div class="col-md-4">
 				<img id="pic_frame" class="img-responsive" src="img/prof_pic.jpg" alt="joshua's profile pic">
 			</div>
@@ -160,81 +239,120 @@ if you would like the <hr> to be full width, replace <div> with <div class='row'
 				<div class="separator"></div>
 				<h4>Aspiring Web Developer</h4>
 				<hr>
-				<h4>Technical architect and consultant with proven expertise in IT service design and project management. Digital marketer with experience in WordPress administration, SEO and content publishing. Entrepreneur with interests in healthcare informatics and innovation.</h4>				
+				<h4>Technical architect and consultant with proven expertise in IT service design and project management. Digital marketer with experience in WordPress administration, SEO and content publishing. Entrepreneur with interests in healthcare informatics and social enterprise.</h4>				
 			</div>			
 		</div>
-		<hr>
+		
 		<div id="portfolio" class="row">
 			<div class="col-md-12 section">
-				<h3><span>PORTFOLIO</span></h3>
+				<h3><span id="port_span">PORTFOLIO</span></h3>
 			</div>
 		</div>
-		<div class="row">
+		<div id="panel" class="row standoff">
 			<div class="col-md-4">
-				<img class="img-responsive" src="img/FYST-capture.png" alt="Fix Your Sleep Today blog">
+				<img class="img-responsive sample" src="img/FYST-capture.png" alt="Fix Your Sleep Today blog">
 			</div>
 
 			<div class="col-md-4">
-				<img class="img-responsive" src="img/AMA-capture.png" alt="A Man Aflame blog">
+				<img class="img-responsive sample" src="img/AMA-capture.png" alt="A Man Aflame blog">
 			</div>
 
 			<div class="col-md-4">
-				<img class="img-responsive" src="img/natkleit-capture.png" alt="A Tribute to Nathaniel Kleitman website">
+				<img class="img-responsive sample" src="img/natkleit-capture.png" alt="A Tribute to Nathaniel Kleitman website">
 			</div>
 			
 		</div>
-		<hr>
-		<div id="contact" class="row">
+		
+		<div id="contact" class="row standoff">
 			<div class="col-md-12 section">
 				<h3><span>CONTACT</span></h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				
+			<div class="col-md-6">
+				<h4>I'm an IT Director by day and an aspiring web developer by night. I am also convinced that someone swapped by blood for coffee when I wasn't looking (just kidding). If you ever want to reach out to me, just leave some info in the contact form and I'll get back to you as soon as I can (if hyperactivity doesn't distract me first).</h4>
+
+				<h4>You can find me at my usual haunts on the web:</h4>
+
+				<div class="row"><hr></div>
+				<div class="row">
+					
+					<ul class="social-network social-circle">
+                        <li class="col-md-2"><a href="https://www.facebook.com/jetoomasu" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li class="col-md-2"><a href="https://twitter.com/fujishima" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li class="col-md-2"><a href="https://plus.google.com/+JoshuaThomas1985" class="icoGoogle" title="Google +" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                        <li class="col-md-2"><a href="https://github.com/fujishimak/" class="icoGitHub" title="GitHub" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+                        <li class="col-md-2"><a href="https://jm.linkedin.com/in/jetoomasu" class="icoLinkedIn" title="Linkedin" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+					</ul>
+					
+				</div>
+				<div class="row"><hr></div>
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<form class="form-horizontal">
 					<div class="form-group">
-						<label class="control-label col-md-3" for="name">Name</label>
-						<div class="col-md-5">
+						<label class="control-label col-md-4" for="name">Name</label>
+						<div class="col-md-8">
 							<input class="form-control" type="text" placeholder="">
 						</div>
 						
 					</div>
 
 					<div class="form-group">
-						<label class="control-label col-md-3" for="email">Email</label>
-						<div class="col-md-5">
+						<label class="control-label col-md-4" for="email">Email</label>
+						<div class="col-md-8">
 							<input class="form-control" type="email" placeholder="">
 						</div>
 						
 					</div>
 
 					<div class="form-group">
-						<label class="control-label col-md-3" for="website">Website</label>
-						<div class="col-md-5">
+						<label class="control-label col-md-4" for="website">Website</label>
+						<div class="col-md-8">
 							<input class="form-control" type="text" placeholder="">
 						</div>
 						
 					</div>
 
 					<div class="form-group">
-						<label class="control-label col-md-3" for="message">Message</label>
-						<div class="col-md-5">
-							<input class="form-control" type="textarea" placeholder="Leave some feedback!">
+						<label class="control-label col-md-4" for="message">Message</label>
+						<div class="col-md-8">
+							<textarea class="form-control" rows="5" placeholder="Leave some feedback!"></textarea>
 						</div>
 						
+					</div>
+
+					<div class="form-group pull-right col-md-6">
+						<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-envelope"></i>  Submit</button>
 					</div>
 				</form>	
 			</div>
 		</div>
 	</div>
+
+
 </div>
 
-<footer>
-	
+<footer class="footer">
+	<div id="footer-container" class="container">
+		<div class="row">
+			<div class="col-md-6 pull-left">
+				
+			</div>
+
+			<div class="col-md-6 pull-right">
+				
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="copyright" class="row">
+		<div class="col-md-12">
+			<h3>Man A Yaad Inc. All Rights Reserved</h3>
+		</div>
+	</div>
 
 </footer>
 
